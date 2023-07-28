@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indentificador</title>
+    <link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <h2 class="btn btn-default heading">Indentificador de Imagens</h2>
+        <h3>O modelo foi treinado para indentificar:</h3>
+        <h4>mouse</h4>
+        <hr>
+        <h4>garrafa de 2L</h4>
+        <hr>
+        <h4>Eu</h4>
+        <hr>
+        <h4>carregador</h4>
+        <hr>
+        <h4>celular</h4>
+        <hr>
+        <h4>Visualização da sua Webcam</h4>
+        <div id="camera"></div>
+        <br>
+        <br>
+        <div id="resultado"></div>
+        <button onclick="CapturarImagem()" class="btn btn-primary"> Capturar Imagem</button>
+        <br>
+        <button onclick="Verificar()" class="btn btn-success"> Verificar Imagem</button>
+        <p id="objeto">Objeto: <span>???</span></p>
+        <p id="confianca">Precisão: <span>???</span></p>
+    </center>
+    <script src="main.js"></script>
+</body>
+
+</html>

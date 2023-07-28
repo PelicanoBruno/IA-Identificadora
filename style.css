@@ -1,0 +1,8 @@
+body{
+    background-color: rgba(1, 126, 1, 0.945);
+    color: blue;
+}
+.heading{
+    width: 50%;
+    font-size: 22px;
+}
